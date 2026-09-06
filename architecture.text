@@ -1,0 +1,75 @@
+backend/
+│
+├── src/
+│   │
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   ├── facilityController.js
+│   │   └── bookingController.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Facility.js
+│   │   └── Booking.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── userRoutes.js
+│   │   ├── facilityRoutes.js
+│   │   └── bookingRoutes.js
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   ├── roleMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── services/
+│   │   ├── authService.js
+│   │   ├── facilityService.js
+│   │   └── bookingService.js
+│   │
+│   ├── utils/
+│   │   ├── generateToken.js
+│   │   └── apiResponse.js
+│   │
+│   ├── app.js
+│   └── server.js
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+
+Backend API Structure
+
+/api
+│
+├── /auth
+│   ├── POST   /register
+│   ├── POST   /login
+│   ├── POST   /logout
+│   └── GET    /me
+│
+├── /users
+│   ├── GET    /
+│   ├── GET    /:id
+│   └── PUT    /:id
+│
+├── /facilities
+│   ├── GET    /
+│   ├── POST   /
+│   ├── GET    /:id
+│   ├── PUT    /:id
+│   └── DELETE /:id
+│
+└── /bookings
+    ├── GET    /
+    ├── POST   /
+    ├── GET    /:id
+    ├── PUT    /:id
+    └── DELETE /:id
